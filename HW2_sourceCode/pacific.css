@@ -1,0 +1,135 @@
+header,
+hgroup,
+nav,
+footer,
+figure,
+figcaption,
+aside,
+section,
+article {
+	display: block;
+}
+
+header {
+	grid-area: header;
+}
+
+#wrapper {
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	grid-template-areas:
+		"header header"
+		"nav content"
+		"nav footer";
+
+}
+
+.resort {
+
+	color: #647ca4;
+	font-weight: bolder;
+}
+
+body {
+	background-color: #00569f;
+	background-image: url(ptrbackground.jpg);
+	background-repeat: repeat-x;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	min-width: 600px;
+	width: 80%;
+}
+
+nav ul {
+	background-color: #8dc6e4;
+	background-size: cover;
+	box-sizing: border-box;
+	list-style-type: none;
+}
+
+nav {
+	background-color: #8dc6e4;
+	grid-area: nav;
+}
+
+nav a {
+	text-decoration: none;
+	font-size: 1.2em;
+	font-weight: bolder;
+	color: #040a2d;
+}
+
+nav a:visited {
+	color: #344873;
+}
+
+#content img {
+	grid-area: content;
+	float: left;
+	margin-right: 35px;
+}
+
+#content ul {
+	list-style-image: url(marker.gif);
+	list-style-position: inside
+}
+
+#content {
+	background-color: white;
+	padding-left: 40px;
+	grid-area: content;
+	text-align: inherit;
+}
+
+nav a:hover {
+	color: #FFFFFF;
+}
+
+header h1 {
+	background-image: url(sunset.jpg);
+	background-size: fit-content;
+	background-position: right;
+	background-repeat: no-repeat;
+	background-color: #000033;
+}
+
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+	border: #000033 2px solid;
+	color: white;
+
+
+}
+
+h2 {
+	color: #3399CC;
+}
+
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+#contact {
+	font-size: 90%;
+}
+
+dt {
+	color: #000033;
+}
+
+footer {
+	background-color: white;
+	padding-top: 40px;
+	padding-left: 40px;
+	padding-bottom: 25px;
+	font-size: 80%;
+	font-style: italic;
+	font-weight: bold;
+	grid-area: footer;
+}
